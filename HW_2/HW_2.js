@@ -6,16 +6,11 @@ if (login == "admin" && password == "1234"){
 }else{
     console.log("login or password is incorrect") 
 }
-//2
-let checkAge = prompt("input your age: ")
+//2   fixed
+let Age = prompt("Введіть свій вік");
+Age = (Age > 18);                                       //   >=18
 
-switch (checkAge){
-    case '18':
-        console.log(true);
-        break;
-    default:
-        console.log(false)
-}
+console.log(Age);
 
 //3
 
