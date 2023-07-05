@@ -57,8 +57,13 @@ switch(Operation){
         console.log(FirstSign * SecondSigh);
         break;
     case'/':
+    if(Operation=='/' && SecondSigh===0){
+        console.log('You can not do this operation');
+        break;
+    }else{
         console.log(FirstSign / SecondSigh);
         break;
+    }
     default:
         console.log('Something is wrong')
 }
