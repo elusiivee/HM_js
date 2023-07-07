@@ -13,9 +13,9 @@ let getValue = function(arg,array){
             console.log('something is wrong');
     }
 
-    //if(arg = 'first'){                                            why it isn`t working(((
+    //if(arg == 'first'){                                            
        //    console.log(array[0]);
-    //}else if(arg = 'last'){
+    //}else if(arg == 'last'){
     //    console.log(array[array.length - 1]);
     //}else{
     //    console.log('something is wrong');
