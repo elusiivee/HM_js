@@ -1,0 +1,37 @@
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
+.butt1{
+    padding: 0.4rem 3.7rem;
+    text-align: center;
+    font-family: Verdana;
+    transition-duration: 0.3s;
+}
+.butt1:hover{
+    background-color: #6c6c6c; /* Dark grey background on mouse-over */
+    color: #eee;
+    transform: scale(1.05);
+}
+
+.menu{
+    width: 200px;
+}
+
+.menu a{
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    padding: 12px; /* Add some padding */
+    display: block;
+    text-decoration: none; /* Remove underline from links */
+    transition-duration: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+    transform: scale(1.05);
+  }
