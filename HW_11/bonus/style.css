@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Leckerli+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+
+h1, h2 { 
+    margin: 0; 
+    font-family: 'Leckerli One', cursive;
+    text-shadow: 0 4px rgba(53, 53, 53, 0.5);
+    font-size: 70px;
+    color: rgb(0, 0, 0) ;
+  }
+
+
+
+
+body {
+    background: white;
+    background-image: linear-gradient(90deg, rgba(208, 122, 60, 0.486) 50%, transparent 0),
+                      linear-gradient(rgba(208, 122, 60, 0.486) 50%, transparent 0);
+    background-size: 30px 30px;
+}
+
+.container{
+    background-color: rgb(255, 166, 78);
+    text-align: left;
+    margin: 7rem auto;
+    width: 80%;
+    border-radius: 2rem;
+    padding: 1rem;
+    min-width: 610px;
+
+}
+.title {
+    text-align: center;
+    margin: 0rem 0rem 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.form-check{
+    padding: 1rem 2rem;
+    border: 2px solid rgba(94, 94, 94, 0.418);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    
+}
+.button1{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+
+.extra-font{
+    margin: 0; 
+    font-family: 'Leckerli One', cursive;
+    text-shadow: 0 4px rgba(53, 53, 53, 0.5);
+    font-size: 50px;
+    color: rgb(0, 0, 0) ;
+}
+.btn-secondary:disabled{
+    color: #000000;
+    background-color: #f88b64;
+    width: 20rem;
+    border: 5px solid #ff5454 ;
+    border-radius: 2rem;
+}
+.btn-secondary{
+    color: #000000;
+    background-color: #ff440097;
+    width: 20rem;
+    border: 5px solid #ff0000 ;
+    border-radius: 2rem;
+}
+
+.btn-secondary:hover{
+    color: #ffffff;
+    background-color: #ff4400;
+
+    border: 5px solid #ca0000 ;
+
+}
+
+
+.picture{
+    display: flex; /* Or use position: relative; with absolute positioning */
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    max-width: 600px;
+    height: 500px;
+}
+.pizza{
+    width: 500px;
+    max-width: 600px;
+    height: 500px;
+    transition: 2s;
+}
+
+
+.pizza:hover{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
