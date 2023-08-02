@@ -1,4 +1,5 @@
-let info= []
+let info= [];
+let user=[];      //fixed
 
 window.onload = function(){
     let nick = document.getElementById('nkm');
@@ -28,7 +29,13 @@ window.onload = function(){
             window.localStorage.setItem('Name', nick.value);
             window.localStorage.setItem('Email', email.value);
             window.localStorage.setItem('Phone', phone.value);
-            console.log(localStorage);
+            user.push({                                             //added array      
+              Name:nick.value,
+              Email:email.value,
+              Phone:phone.value,
+            });
+
+            console.log(user);
             nick.value='';                                          // added cleaning the forms
             email.value = '';
             phone.value = '';

@@ -1,11 +1,11 @@
 window.onload = function(){
-    let canv = document.querySelector('canvas');
-    let btn = document.getElementById('btn');
-    let context = canv.getContext('2d');
-
+    const canvas = document.getElementById("canvas");
+    const btn = document.getElementById("btn");
+    const ctx = canvas.getContext("2d");
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
     btn.addEventListener('click', function(){
-        canv.style.marginLeft = 10 + 'px';
-    });
-
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillRect(10, 0, canvas.width, canvas.height);
+    })
 
 }
