@@ -1,0 +1,43 @@
+body {
+    background-image: url('img/mount.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+.container{
+    background-color: #ffffffcb;
+    border: 6px solid rgba(150, 12, 248, 0.523);
+    text-align: left;
+    margin: 7rem auto;
+    width: 45%;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    min-width: 610px;
+}
+
+.title {
+    text-align: center;
+    margin: 0rem 0rem 1rem;
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.left{
+    min-width: 270px;
+}
+.help{
+    border: 2px solid #e9ecef;
+    border-radius: 0.5rem;
+    text-align: left;
+    padding: 0.4rem;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0.1rem 0rem 0.5rem 4rem;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+
+}
+
+

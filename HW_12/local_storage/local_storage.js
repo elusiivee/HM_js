@@ -4,17 +4,13 @@ window.onload = function(){
     let nick = document.getElementById('nkm');
     let email = document.getElementById('eml');
     let phone = document.getElementById('phn');
-    // let nickValue = nick.value;
-    // let emailValue = email.value;        // чому глобальні перемінні не передаються в функцію checkForm???
-    // let phoneValue = phone.value;
-    let button = document.getElementById('btn1')
+    let button = document.getElementById('btn1');
+    let button2 = document.getElementById('btn2');
+    let localStorage = window.localStorage;
     
 
 
     function checkForm() {
-        // let nickValue = nick.value;
-        // let emailValue = email.value;
-        // let phoneValue = phone.value;
         if (nick.value !== '' && email.value !== '' && phone.value !== '') {
             button.removeAttribute('disabled');
         }else{
@@ -29,19 +25,22 @@ window.onload = function(){
                 Email: email.value,
                 Phone: phone.value,
             })
-            console.log(info);
-            nick.value='';
+            window.localStorage.setItem('Name', nick.value);
+            window.localStorage.setItem('Email', email.value);
+            window.localStorage.setItem('Phone', phone.value);
+            console.log(localStorage);
+            nick.value='';                                          // added cleaning the forms
             email.value = '';
             phone.value = '';
+            button2.removeAttribute('disabled');                    // remove attribute disabled for second button
         }else{
             alert('data is incorect')
             console.log('fail')
         }
-        
-        
-        
-        
+    
+
     })
+
     function dataCheck(){
         let nickPattern = /^[a-zA-Z]{2,}$/;
         let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -71,6 +70,11 @@ window.onload = function(){
             return false;
         }
     }
+    button2.addEventListener('click', function(){
+        const message = `Name: ${window.localStorage.getItem('Name')}\nEmail: ${window.localStorage.getItem('Email')}\nPhone: ${window.localStorage.getItem('Phone')}`;
+        alert(message);
+    });
+
     nick.addEventListener('input', checkForm, dataCheck);
     email.addEventListener('input', checkForm, dataCheck);
     phone.addEventListener('input', checkForm, dataCheck);
