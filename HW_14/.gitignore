@@ -1,0 +1,53 @@
+ node_modules
+ 
+ # OS generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# Node.js generated files #
+###########################
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Compiled output #
+###################
+dist/
+build/
+
+# Environment files #
+#####################
+.env
+
+# Dependency lock files #
+######################
+yarn.lock
+package-lock.json
+
+# IDE specific files #
+######################
+.vscode/
+.idea/
+
+# Compiled CSS and JavaScript #
+###############################
+*.min.css
+*.min.js
+
+# Log files #
+#############
+*.log
+
+# Compiled SASS #
+#################
+.sass-cache/
+
+# Temporary files #
+###################
+*.tmp
+*.temp
+
+# Caches #
+##########
+.cache/

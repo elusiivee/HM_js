@@ -6,7 +6,14 @@ fetch('https://swapi.dev/api/planets').then(response=>response.json()).then(func
         getPlanet(planets);
         createBoxes(arr);
     });
-
+async function fetching(){
+    let response = await fetch('https://swapi.dev/api/planets');
+    let data = await response.json();
+    let planets=data.results;
+        console.log(planets);
+        getPlanet(planets);
+        createBoxes(arr);
+}
 
 let getPlanet = function(array){
     for (let i=0; i<array.length; i++){
