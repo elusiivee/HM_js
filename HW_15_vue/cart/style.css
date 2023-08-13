@@ -1,0 +1,16 @@
+.container{
+    background-color: #ffffffcb;
+    border: 6px solid rgba(248, 12, 12, 0.523);
+
+    margin: 7rem auto;
+    width: 25%;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: relative;
+    min-width: 610px;
+
+}
+
+.img{
+    text-align: center;
+}
