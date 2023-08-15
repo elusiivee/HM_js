@@ -16,10 +16,12 @@
             <div style="font-size: large; font-weight: bold;">Price: {{price}} $</div>
             <button v-if="instock > 0" @click="toCart">Add to cart</button>
             <button v-if="incart > 0" @click="fromCart">Remove from cart</button>
-            <button @click="like++">Like</button>
+            <button v-if="userslike !== 1" @click="like">Like</button>
+            <button v-if="userslike !== 0" @click="dislike">Dislike</button>
             <div style="font-size: large; font-weight: 600; text-align: right;">{{like}}♥</div>
             <div>In stock: {{instock}}</div>
             <div>In cart: {{incart}}</div>
+            <div>Total price: {{total}}</div>
     </div>
     <script src="cart.js"></script>
 </div>
