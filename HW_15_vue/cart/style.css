@@ -1,14 +1,21 @@
-.container{
-    background-color: #ffffffcb;
-    border: 6px solid rgba(248, 12, 12, 0.523);
+body{
+    background-image: url('img/Tokyo-2020-GettyImages-1057740498.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-size: 100%;
 
+}
+.container{
+    background-color: #44444430;
+    border: 4px solid rgb(248, 12, 12);
     margin: 7rem auto;
-    width: 25%;
+    width: 30%;
     border-radius: 1rem;
     padding: 1rem;
     position: relative;
     min-width: 610px;
-
+    backdrop-filter: blur(8px);
 }
 
 .img{

@@ -11,13 +11,12 @@
 <body>
     <div id="app">
         <div class="container">
-            <div class="img" ><img src="img/A1051A055-0701.jpg" alt="assecs" style="height: 199px; width: 360px; object-fit: none;"></div>
+            <div class="img" ><img src="img/A1051A055-0701.png" alt="assecs" style="height: 199px; width: 360px; object-fit: none;"></div>
             <div style="font-size: large; font-weight: bold;">Assecs Tokyo</div>
             <div style="font-size: large; font-weight: bold;">Price: {{price}} $</div>
             <button v-if="instock > 0" @click="toCart">Add to cart</button>
             <button v-if="incart > 0" @click="fromCart">Remove from cart</button>
-            <button v-if="userslike !== 1" @click="like">Like</button>
-            <button v-if="userslike !== 0" @click="dislike">Dislike</button>
+            <button @click="Like" id="btnlike">Like</button>
             <div style="font-size: large; font-weight: 600; text-align: right;">{{like}}♥</div>
             <div>In stock: {{instock}}</div>
             <div>In cart: {{incart}}</div>

@@ -23,22 +23,19 @@ const app = Vue.createApp({
                 this.total-=this.price;
             }
         },
-        like(){                                         // added funtion to put like
-            if(this.userslike !== 1){
-                this.like++;
-                this.userslike++;
-            }
-            
-        },  
-        dislike(){                                      // added funtion to put dislike
-            if(this.userslike !== 0){
-                this.like--;
-                this.userslike--;
+        Like() {
+            let btn=document.getElementById('btnlike');
 
+            if (this.userslike === 0) {
+                this.like++;
+                this.userslike = 1;
+                btn.innerText='Dislike';
+            } else {
+                this.like--;
+                this.userslike = 0;
+                btn.innerText='Like';
             }
-            
         },
-        }
     
-});
+}});
 app.mount('#app')
