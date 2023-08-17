@@ -1,0 +1,15 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Angular">
+<rect id="BG" width="80" height="80" rx="40" fill="#34474F"/>
+<mask id="mask0_4_3686" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+<rect id="Mask" width="80" height="80" rx="40" fill="white"/>
+</mask>
+<g mask="url(#mask0_4_3686)">
+<g id="Just Logo">
+<path id="Path" d="M40.1 16L17.8154 23.9468L21.2144 53.4122L40.1 63.8723L58.9856 53.4122L62.3846 23.9468L40.1 16Z" fill="#DD0031" stroke="white"/>
+<path id="Path_2" d="M40.1 21.3138V21.2899V45.5372V63.0131L58.9856 53.4122L62.3846 23.9468L40.1 16.7991V21.3138Z" fill="#C3002F"/>
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M26.1692 52.5266L40.1 21.2899L53.983 52.5266H48.7889L45.9883 45.5372H34.1639L31.3633 52.5266H26.1692ZM40.1 31.4388L36.0309 41.2287H44.1692L40.1 31.4388Z" fill="white"/>
+</g>
+</g>
+</g>
+</svg>
